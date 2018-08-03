@@ -21,7 +21,7 @@ categories: Python
 		print w
 	else:
 
-	{%end highlight%}
+	{% endhighlight %}
 
 ##Functions
 	*functions call can have fewer arguments to pass than the actual definition if the function definition has as default value to pass.
@@ -29,7 +29,7 @@ categories: Python
 	{% highlight ruby %}
 	def funct(a,b=2,c=3):
 		print(a,b,c);
-	{%end highlight%}1
+	{% endhighlight %}1
 
 ##New
 	* in : if a value is present in the sequence (more to explore)

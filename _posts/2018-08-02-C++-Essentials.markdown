@@ -10,7 +10,7 @@ categories: c++
 	* To impose the non modifiability (not entirely refer const_cast)
 	* To restrict the function from modifying, variables are passed as Const.
 	* Also a function is restricted from modifying any variable by using const in function definition
-	**Eg:
+	** Eg:
 	{% highlight ruby %}
 	void set(const int var) {
 

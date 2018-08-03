@@ -6,7 +6,7 @@ categories: [c++,functional,javascript]
 ---
 
 * Genarality: A closure is a property in which a function can access the variables(temporary/out of scope/not static or global) that are out of scope of current function.
-    **Eg:
+    ** Eg:
         {% highlight ruby %}
         int value = 2;
         auto funct = [&](int a){value = a;};
