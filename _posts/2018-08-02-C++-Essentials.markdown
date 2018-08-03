@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C++ Essentials"
-date:   2018-07-31
+date:   2018-08-02
 categories: c++
 ---
 ##Pointers and references:
