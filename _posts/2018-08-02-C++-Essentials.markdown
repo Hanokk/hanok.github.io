@@ -5,12 +5,12 @@ date:   2018-08-02
 categories: c++
 ---
 ## Pointers and references:
-	* 
-## Const:
-	* To impose the non modifiability (not entirely refer const_cast)
-	* To restrict the function from modifying, variables are passed as Const.
-	* Also a function is restricted from modifying any variable by using const in function definition
-	** Eg:
+	 
+## Const
+
+* To impose the non modifiability (not entirely refer `const_cast`).
+* To restrict the function from modifying, variables are passed as Const.
+* Also a function is restricted from modifying any variable by using const in function definition.
 
 	{% highlight c++ %}
 	void set(const int var) {
@@ -23,25 +23,24 @@ categories: c++
 	{% endhighlight %}
 
 ## Casting:
-	*static_cast:
-	**Eg:
+
+* static_cast
 
 	{% highlight c++ %}
 	{% endhighlight %}
 
-	*dynamic_cast:
+* dynamic_cast:
 
 	{% highlight c++ %}
 	{% endhighlight %}
 
-	*const_cast:
+* const_cast:
 
 	{% highlight c++ %}
 	{% endhighlight %}
 
 ## Operator Overloading:
- 	* To overload the operation of a operator in the class for customised behaviour of objects.
-	** Eg:
+ * To overload the operation of a operator in the class for customised behaviour of objects.
 
 		{% highlight c++ %}
 		void operator+(const& obj){
@@ -53,7 +52,8 @@ categories: c++
 
 
 ## Multi Inheritance:
-	* If a class is inherited from more than one base class.
+* If a class is inherited from more than one base class.
+
 ## Private Inheritance:
 
 ## Abstract Data Types:
@@ -62,8 +62,8 @@ categories: c++
 ## Friend Class and Functions:
     
 ## Templates:
-    *Templates are used when we need a generic implementation irrespective of the data types we pass to a function.
-    **Eg:
+
+* Templates are used when we need a generic implementation irrespective of the data types we pass to a function.
 
         {% highlight c++ %}
         template <typename T>
@@ -73,8 +73,7 @@ categories: c++
     {% endhighlight %}
 
 ## Functors and Functional pointers
-    * Functors are function objects. _() operator is oveloaded
-    **Eg:
+* Functors are function objects. `()` operator is oveloaded.
 
     {% highlight c++ %}
     class func {
@@ -87,8 +86,7 @@ categories: c++
     for_each(....,....,func())
     {% endhighlight %}
 
-    * They are used to maintain state
-    **Eg:
+* They are used to maintain state
 
         {% highlight c++ %}
     class func {
@@ -105,9 +103,8 @@ categories: c++
     for_each(....,....,func(5))
     {% endhighlight %}
     
-    * Function pointers
-    **Eg:
-    
+* Function pointers
+
         {% highlight c++ %}
     (int*) func(int x){
          return 2*x
@@ -116,4 +113,5 @@ categories: c++
     for_each(....,....,&func)
     {% endhighlight %}
     
-    * Functions pointers add runtime overhead while functors are inlined during compiled time.
+* Functions pointers add runtime overhead while functors are inlined during compiled time.
+    

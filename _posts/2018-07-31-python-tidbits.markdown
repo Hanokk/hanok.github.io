@@ -6,35 +6,34 @@ categories: Python
 ---
 
 ## Conditional flows
-	* No switch statements instead only if-else.
-	**Eg:
+* No switch statements instead only if-else.
+
 	{% highlight py %}
 	if a:
 	elif b:
 	else:
 	{% endhighlight %}
-	* for statement:
-	**Eg
-	* for exhaustion can transfer control to else
+* for statement:
+
+* for exhaustion can transfer control to else
 
 	{% highlight py %}
 	for w in range(5):
 		print w
 	else:
-		print ""
-
+		print ""	
 	{% endhighlight %}
 
 ## Functions
-	*functions call can have fewer arguments to pass than the actual definition if the function definition has as default value to pass.
-	**Eg
+* functions call can have fewer arguments to pass than the actual definition if the function definition has as default value to pass.
+
 	{% highlight py %}
 	def funct(a,b=2,c=3):
 		print(a,b,c);
 	{% endhighlight %}
 
 ## New
-	* in : if a value is present in the sequence (more to explore)
+* `in` : if a value is present in the sequence (more to explore)
+	
 ## Built-ins
-	**range - Iterator
-
+- range - Iterator
