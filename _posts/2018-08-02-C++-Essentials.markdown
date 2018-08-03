@@ -11,6 +11,7 @@ categories: c++
 	* To restrict the function from modifying, variables are passed as Const.
 	* Also a function is restricted from modifying any variable by using const in function definition
 	** Eg:
+
 	{% highlight c++ %}
 	void set(const int var) {
 
@@ -20,28 +21,34 @@ categories: c++
 
 	}
 	{% endhighlight %}
+
 ## Casting:
 	*static_cast:
 	**Eg:
+
 	{% highlight c++ %}
 	{% endhighlight %}
 
 	*dynamic_cast:
+
 	{% highlight c++ %}
 	{% endhighlight %}
 
 	*const_cast:
+
 	{% highlight c++ %}
 	{% endhighlight %}
 
 ## Operator Overloading:
  	* To overload the operation of a operator in the class for customised behaviour of objects.
 	** Eg:
+
 		{% highlight c++ %}
 		void operator+(const& obj){
 
 		}
 		{% endhighlight%}
+
 ## Inheritance:
 
 
@@ -57,6 +64,7 @@ categories: c++
 ## Templates:
     *Templates are used when we need a generic implementation irrespective of the data types we pass to a function.
     **Eg:
+
         {% highlight c++ %}
         template <typename T>
         T Myfunc(T x,T y){
@@ -67,6 +75,7 @@ categories: c++
 ## Functors and Functional pointers
     * Functors are function objects. _() operator is oveloaded
     **Eg:
+
     {% highlight c++ %}
     class func {
         int operator()(int x){ return 2*x}
@@ -80,6 +89,7 @@ categories: c++
 
     * They are used to maintain state
     **Eg:
+
         {% highlight c++ %}
     class func {
         int local;
@@ -97,6 +107,7 @@ categories: c++
     
     * Function pointers
     **Eg:
+    
         {% highlight c++ %}
     (int*) func(int x){
          return 2*x
