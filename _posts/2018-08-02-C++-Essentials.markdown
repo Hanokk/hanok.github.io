@@ -4,9 +4,9 @@ title:  "C++ Essentials"
 date:   2018-08-02
 categories: c++
 ---
-##Pointers and references:
+## Pointers and references:
 	* 
-##Const:
+## Const:
 	* To impose the non modifiability (not entirely refer const_cast)
 	* To restrict the function from modifying, variables are passed as Const.
 	* Also a function is restricted from modifying any variable by using const in function definition
@@ -20,7 +20,7 @@ categories: c++
 
 	}
 	{% endhighlight %}
-##Casting:
+## Casting:
 	*static_cast:
 	**Eg:
 	{% highlight c++ %}
@@ -34,27 +34,27 @@ categories: c++
 	{% highlight c++ %}
 	{% endhighlight %}
 
-##Operator Overloading:
-	* To overload the operation of a operator in the class for customised behaviour of objects.
+## Operator Overloading:
+ 	* To overload the operation of a operator in the class for customised behaviour of objects.
 	** Eg:
 		{% highlight c++ %}
 		void operator+(const& obj){
 
 		}
 		{% endhighlight%}
-##Inheritance:
+## Inheritance:
 
 
-##Multi Inheritance:
+## Multi Inheritance:
 	* If a class is inherited from more than one base class.
-##Private Inheritance:
+## Private Inheritance:
 
-##Abstract Data Types:
+## Abstract Data Types:
 
 
-##Friend Class and Functions:
+## Friend Class and Functions:
     
-##Templates:
+## Templates:
     *Templates are used when we need a generic implementation irrespective of the data types we pass to a function.
     **Eg:
         {% highlight c++ %}

@@ -12,7 +12,7 @@ categories: Python
 	if a:
 	elif b:
 	else:
-	{%end highlight%}
+	{% endhighlight %}
 	* for statement:
 	**Eg
 	* for exhaustion can transfer control to else
@@ -20,6 +20,7 @@ categories: Python
 	for w in range(5):
 		print w
 	else:
+		print ""
 
 	{% endhighlight %}
 
