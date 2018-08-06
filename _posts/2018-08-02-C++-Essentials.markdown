@@ -14,14 +14,15 @@ categories: c++
 
 	{% highlight c++ %}
 	void set(const int var) {
-
+        
 	}
 
 	void get() const{
 
 	}
 	{% endhighlight %}
-
+	
+    -  If we decalre the `set` as const then it wont let us modify 
 ## Casting:
 
 * static_cast
@@ -57,7 +58,12 @@ categories: c++
 ## Private Inheritance:
 
 ## Abstract Data Types:
-
+* Its analogous to generics or template. In templates we make a method irrespective of data type. Absract data types are custom real world abstract entities
+* Like zoo -> elephant,lion
+** zoo is abstract data type which for suppose performs actions like area code in which animal is held, type of the animal.
+* More like a container that hold set of X. X are the various types in Y. Y is the abstract data type.
+* atleast one fucntion should be pure virtual in the abstract class.
+** Dog can be a abstract data type where types of dogs can be different class that inherit.
 
 ## Friend Class and Functions:
     
@@ -70,8 +76,59 @@ categories: c++
         T Myfunc(T x,T y){
             return x>y;
         }
+        
+        Myfunc<int> (i,j);
     {% endhighlight %}
 
+* Can use either typename or class keyword both are almost same in most of the cases(from C++17 exactly same). its more of a coding style semantic
+    
+* Compiler can implicitly define the data type we are passing.
+
+        {% highlight c++ %}
+        int i,j;
+        MyFunc(i,j);
+    {% endhighlight %}
+    
+* class template syntax
+
+        {% highlight c++ %}
+        template <typename T>
+        class myclassname {
+            public:
+            T Myfunc(T x,T y){
+                return x>y;
+            }
+        }
+
+        T myclassname<T>::Myfunc(i,j) // if MyFunc not declared inline and instead outside class
+    {% endhighlight %}
+    
+* Suppose there is a special implementation for the diffrent type that we pass we use "Template Specialisation"
+** for example we need have a method in class where we call increase which is not applicable for char and we need special requirement to change the case.
+
+        {% highlight c++ %}
+        template <typename T>
+        class myclassname {
+            public:
+            T Myfunc(T x,T y){
+                return x>y;
+            }
+        }
+        
+        template<class T>
+        class Myclass {
+            T increase (T a){return a++;}
+        }
+        
+        template<>
+        class Myclass<char> {
+            char uppercase {
+                //implement
+            }
+        }
+
+    {% endhighlight %}
+    
 ## Functors and Functional pointers
 * Functors are function objects. `()` operator is oveloaded.
 
@@ -114,4 +171,12 @@ categories: c++
     {% endhighlight %}
     
 * Functions pointers add runtime overhead while functors are inlined during compiled time.
-    
+
+## Lambda Expression
+
+* Lanbda expression are also called anonymous functions of functional language and its similar to functor but less code and no state
+
+        {% highlight c++ %}
+    auto f = [](int x){return 2*x;};
+    {% endhighlight %}
+* More on this here.
