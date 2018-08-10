@@ -11,39 +11,40 @@ categories: [Javascript,functional]
 
 * Some of the ways to declare objects. All the objects are treated as key value pair.
 
-{% raw  %}
+{% highlight js  %}
     var obj = new Object();
 
     var obj = {};
-{% endraw %}
+{% endhighlight %}
 
-{% raw  %}
+{% highlight js %}
     var user = {name : "", age : 25};
     
     user.name or user['name']
-{% endraw %}
+{% endhighlight %}
+
 * Functions are also objects. And supoorts fucntional programming features like first class functions where function can be treated as variable which can be initialised
 with function, passed into a fucntion and can return fucntion.
 
-{% raw  %}
+{% highlight js %}
     var func = function (){
         return "Hello";
     }
-{% endraw %}
+{% endhighlight %}
 
-{% raw  %}
+{% highlight js %}
     function func(){
         return "Hello";
     }
-{% endraw %}
+{% endhighlight %}
 
-{% raw  %}
+{% highlight js %}
     var func = {}=>{
         return "Hello";
     }
-{% endraw %}
+{% endhighlight %}
 
-{% raw  %}
+{% highlight js %}
     function func(){
         return function(){
             return "Hello"
@@ -51,16 +52,16 @@ with function, passed into a fucntion and can return fucntion.
     }
     
     var a = func();
-{% endraw %}
+{% endhighlight %}
 
 * Closures are also supported. In JS scope is function level and each function initialisation creates a object corresponding to the function and it will be accessed
 by all the functions nested inside the function. Every new function creates an object corresponding to that function.
 
-{% raw  %}
+{% highlight js %}
     function func(){
         var c = "closure";
         return function(){
             return c;
         }
     }
-{% endraw %}
+{% endhighlight %}
