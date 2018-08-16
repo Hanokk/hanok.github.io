@@ -6,8 +6,25 @@ categories: [c++,functional,javascript]
 ---
 
 * Genarality: A closure is a property in which a function can access the variables(temporary/out of scope/not static or global) that are out of scope of current function.
-    ** Eg:
+*   **Eg**:
         {% highlight ruby %}
         int value = 2;
         auto funct = [&](int a){value = a;};
         {% endhighlight %}
+
+* Below example is recursive example using closure and first class functions.
+*	**Eg:**
+
+	{% highlight c++ %}
+std::function<int(int)> f;
+f = [&](int a){
+	std::cout<<a<<endl;
+	if(a<0)
+	return 0;
+	return f(--a);
+};
+
+f(7);
+	{% endhighlight %}
+
+- `f` needs to be captured inside the lambda.
